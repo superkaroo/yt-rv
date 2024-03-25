@@ -202,6 +202,7 @@ patch() {
 				fi
 			fi
 		fi
+		echo "APP_VERSION=$version" >> $GITHUB_ENV
 		eval java -jar revanced-cli*.jar $p\
 		$b revanced-patches*.jar \
 		$m revanced-integrations*.apk\
